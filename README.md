@@ -1,50 +1,124 @@
-# Welcome to your Expo app 👋
+# Great Theme - React Native Expo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+Great Theme is a modern, feature-rich React Native application built with Expo, designed to provide a seamless and engaging mobile experience. The app showcases a comprehensive theming system, internationalization support, and follows best practices in React Native development.
 
-1. Install dependencies
+## Key Features
 
-   ```bash
-   npm install
-   ```
+- 🎨 Dynamic theming system with light/dark mode support
+- 🌐 Internationalization (i18n) with multiple language support
+- 📱 Modern UI components with haptic feedback
+- 🔐 Secure authentication system
+- 🎯 File-based routing using Expo Router
+- 📦 State management with React Query
+- 🎬 Media support (images, video player)
+- 📲 Push notifications
+- 🔄 Bottom sheets and modals
+- 📝 Form handling with validation
 
-2. Start the app
+## Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+- [Expo](https://expo.dev) - Development platform
+- [React Native](https://reactnative.dev) - Core framework
+- [TypeScript](https://www.typescriptlang.org) - Programming language
+- [Expo Router](https://docs.expo.dev/router/introduction) - Navigation
+- [React Query](https://tanstack.com/query/latest) - Data fetching
+- [React Hook Form](https://react-hook-form.com) - Form management
+- [i18next](https://www.i18next.com) - Internationalization
+- [Zod](https://zod.dev) - Schema validation
 
-In the output, you'll find options to open the app in a
+## Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Prerequisites
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Node.js (v18 or newer)
+- bun or yarn
+- iOS Simulator / Android Emulator for mobile development
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 
-## Get a fresh project
+### Installation
 
-When you're ready, run:
+1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone git@github.com:quang-pham-dev/great-theme.git
+cd great-theme
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
 
-## Learn more
+```bash
+bun install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+bun start
+```
 
-## Join the community
+### Available Scripts
 
-Join our community of developers creating universal apps.
+- `bun start` - Start the Expo development server
+- `bun run ios` - Run on iOS simulator
+- `bun run android` - Run on Android emulator
+- `bun run web` - Run on web browser
+- `bun run lint` - Run ESLint
+- `bun run lint:fix` - Fix ESLint issues
+- `bun run format` - Format code with Prettier
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+```
+great-theme/
+├── app/                    # Application screens and navigation
+├── assets/                 # Static assets (images, fonts)
+├── components/             # Reusable UI components
+├── config/                 # App configuration
+├── constants/              # Constants and static data
+├── contexts/               # React contexts
+├── hooks/                  # Custom React hooks
+├── i18n/                   # Internationalization
+├── interfaces/             # TypeScript interfaces
+├── services/               # API services
+├── theme/                  # Theming system
+└── utils/                  # Utility functions
+```
+
+## Development Guidelines
+
+### Code Style
+
+- Follow TypeScript best practices
+- Use functional components with hooks
+- Implement proper error handling
+- Write meaningful component and function names
+- Add JSDoc comments for complex functions
+
+### Theming
+
+The app uses a custom theming system that supports:
+- Light and dark modes
+- Custom color schemes
+- Responsive typography
+- Consistent spacing
+
+### Internationalization
+
+Add new translations in `i18n/locales/` following the existing structure:
+```typescript
+export const en = {
+  common: {
+    // translations
+  }
+};
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ using [Expo](https://expo.dev)
